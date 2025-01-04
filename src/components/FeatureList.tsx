@@ -2,11 +2,11 @@ import { Send, Bell, Heart } from 'lucide-react'
 
 const features = [
   {
-    Icon: Send,
+    Icon: Heart,
     text: 'We handle the work of crafting meaningful messages and posts',
   },
   { Icon: Bell, text: "We'll nudge you with options" },
-  { Icon: Heart, text: 'You just hit send' },
+  { Icon: Send, text: 'You just hit send' },
 ]
 
 export function FeatureList() {

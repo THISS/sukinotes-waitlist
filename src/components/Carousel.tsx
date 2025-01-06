@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { ExampleCard } from './ExampleCard'
 const images = [
-  '/example-message-1.png',
+  // '/example-message-1.png',
   '/example-message-2.png',
   '/example-message-3.png',
   '/example-message-4.png',
@@ -82,13 +82,13 @@ export function Carousel() {
     <div className="relative w-full max-w-md overflow-hidden h-full flex items-center justify-center">
       {!isAnimating && (
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-          <ExampleCard imageSrc={images[currentIndex]} />
+          <ExampleCard imageSrc={images[currentIndex]} disableViewer />
         </div>
       )}
       <div
         className={`absolute top-0 left-0 w-full h-full transform ${cardOneClass} flex items-center justify-center`}
       >
-        <ExampleCard imageSrc={images[currentIndex]} />
+        <ExampleCard imageSrc={images[currentIndex]} disableViewer />
       </div>
       <div
         className={`absolute top-0 left-0 w-full h-full transform ${cardTwoClass} flex items-center justify-center`}
@@ -97,6 +97,7 @@ export function Carousel() {
           imageSrc={
             direction === 'next' ? images[nextIndex] : images[prevIndex]
           }
+          disableViewer
         />
       </div>
 

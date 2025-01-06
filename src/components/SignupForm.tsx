@@ -19,7 +19,7 @@ export function SignupForm() {
         data-widget_type="WIDGET_2"
       ></div>
       <p className="text-sm text-darkGray text-center mt-4 italic">
-        We promise to only send you awesome helpful emails
+        We promise to only send you an email when you are next in line
       </p>
     </div>
   )

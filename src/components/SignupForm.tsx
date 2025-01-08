@@ -3,7 +3,7 @@ export function SignupForm() {
   return (
     <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-md max-w-lg mx-auto">
       <h2 className="text-xl font-semibold text-charcoal mb-4 text-center">
-        Be notified when we go live. Sign up now!
+        Be notified when we are ready for you. <br /> Sign up now!
       </h2>
       <Helmet>
         <link
@@ -19,7 +19,13 @@ export function SignupForm() {
         data-widget_type="WIDGET_2"
       ></div>
       <p className="text-sm text-darkGray text-center mt-4 italic">
-        We promise to only send you an email when you are next in line
+        We promise to only send you an email when you are next in line.
+      </p>
+      <p className="text-sm text-darkGray text-center mt-4 italic">
+        <strong>
+          Join our waitlist and enjoy 1 year of free premium access or a 75%
+          discount on a lifetime subscription.
+        </strong>
       </p>
     </div>
   )

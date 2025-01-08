@@ -2,7 +2,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { ExampleCard } from './ExampleCard'
 const images = [
   // '/example-message-1.png',
-  '/example-message-2.png',
+  // '/example-message-2.png',
+  // '/example-message-0.png',
+  '/example-message-8.png',
   '/example-message-3.png',
   '/example-message-4.png',
   '/example-message-5.png',
